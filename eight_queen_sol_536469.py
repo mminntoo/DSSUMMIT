@@ -66,7 +66,7 @@ def mutate(x):
     return x
 
 def genetic_queen(population, fitness, generation):
-    mutation_probability = 0.03
+    mutation_probability = 0.07
     new_population = []
     probabilities = [probability(n, fitness) for n in population]
     for i in range(len(population)):
@@ -87,7 +87,7 @@ def print_chromosome(chrom, generation):
 if __name__ == "__main__":
     '''main function to check for the right sequence based on max fitness  i.e. 28'''
     maxFitness = (8*7)/2
-    population = [random_chromosome() for _ in range(123)]
+    population = [random_chromosome() for _ in range(150)]
 
     generation = 1
 
