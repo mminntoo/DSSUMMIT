@@ -82,7 +82,7 @@ def genetic_queen(population, fitness, generation):
 
 def print_chromosome(chrom, generation):
     print("Generation = {} Chromosome = {}  Fitness = {}"
-        .format(generation, str(chrom), fitness(chrom)))
+        .format(generation, str(chrom).replace('[', '').replace(']', '').replace(',', '').replace(' ', ''), fitness(chrom)))
 
 if __name__ == "__main__":
     '''main function to check for the right sequence based on max fitness  i.e. 28'''
